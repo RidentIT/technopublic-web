@@ -22,6 +22,10 @@ export default function ProductsPage() {
     <>
       <PageHeader
         label="Our Products"
+        image={{
+          src: "/techno3.jpg",
+          alt: "A laptop displaying a glowing design on its screen, representing the technology products Techno Hub supplies",
+        }}
         lines={[
           { text: "Genuine technology," },
           { text: "ready to deliver.", accent: true },

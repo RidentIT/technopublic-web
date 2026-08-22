@@ -2,10 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // All imagery currently ships from /public as local assets, so no remote
-    // patterns are required. If real product photography is later served from a
-    // CDN, whitelist the host here, e.g.:
-    // remotePatterns: [{ protocol: "https", hostname: "cdn.example.com" }],
+    // Ten catalogue items use hotlinked Unsplash stock photos (free licence,
+    // no attribution required) until real product photography replaces them —
+    // see the TODO in lib/products.ts. Everything else ships from /public.
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com" },
+    ],
     formats: ["image/avif", "image/webp"],
 
     // NOTE: the placeholder art in /public is SVG, which there is nothing to

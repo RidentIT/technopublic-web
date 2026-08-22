@@ -113,11 +113,14 @@ export const categoryById = (id: CategoryId): Category =>
 export const isVector = (src: string): boolean => src.endsWith(".svg");
 
 /*
- * The four featured entries (business-laptops, gaming-pcs, routers, cctv-kits)
- * use real photos from /public. Every other `image` below still points at
- * /products/*.svg — generated dark-gradient placeholder panels, correct in
- * tone and aspect ratio but not actual products.
- * TODO: replace the remaining SVG placeholders with real product photography.
+ * Every product now has a real photo:
+ *  - The four featured entries (business-laptops, gaming-pcs, routers,
+ *    cctv-kits) use local files from /public.
+ *  - The rest hotlink free-licence Unsplash photos (no attribution required)
+ *    chosen to match each product, allowed via `remotePatterns` in
+ *    next.config.mjs.
+ * TODO: replace the hotlinked Unsplash photos with real product photography
+ * and local files once available, for a permanent, non-external-dependent set.
  */
 export const products: Product[] = [
   {
@@ -135,7 +138,7 @@ export const products: Product[] = [
     category: "laptops-desktops",
     description:
       "Custom-built desktops assembled to your budget and workload, from office PCs to design workstations.",
-    image: "/products/desktops.svg",
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "all-in-one-pcs",
@@ -143,7 +146,7 @@ export const products: Product[] = [
     category: "laptops-desktops",
     description:
       "Space-saving all-in-one systems for reception desks, clinics and small offices.",
-    image: "/products/all-in-one.svg",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "monitors",
@@ -151,7 +154,7 @@ export const products: Product[] = [
     category: "accessories",
     description:
       "Full HD to 4K displays, including eye-care panels for long working hours and dual-screen setups.",
-    image: "/products/monitors.svg",
+    image: "https://images.unsplash.com/photo-1611648694931-1aeda329f9da?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "keyboards-mice",
@@ -159,7 +162,7 @@ export const products: Product[] = [
     category: "accessories",
     description:
       "Wired, wireless and mechanical input devices for everyday productivity and heavy typing.",
-    image: "/products/keyboards.svg",
+    image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "storage",
@@ -167,7 +170,7 @@ export const products: Product[] = [
     category: "accessories",
     description:
       "SSDs, hard drives, external storage, pen drives and RAM upgrades to bring older machines back to life.",
-    image: "/products/storage.svg",
+    image: "https://images.unsplash.com/photo-1669480380758-4b163a33f6f9?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "gaming-pcs",
@@ -184,7 +187,7 @@ export const products: Product[] = [
     category: "gaming",
     description:
       "Mechanical keyboards, precision mice, headsets, controllers and high-refresh gaming monitors.",
-    image: "/products/gaming-gear.svg",
+    image: "https://images.unsplash.com/photo-1566055972289-c52022ae23b7?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "routers",
@@ -201,7 +204,7 @@ export const products: Product[] = [
     category: "networking",
     description:
       "Managed and unmanaged switches, patch panels and complete office network cabling.",
-    image: "/products/networking.svg",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "printers",
@@ -209,7 +212,7 @@ export const products: Product[] = [
     category: "printers-projectors",
     description:
       "Inkjet, laser and ink-tank printers, plus scanners and all-in-one office machines.",
-    image: "/products/printers.svg",
+    image: "https://images.unsplash.com/photo-1650094980833-7373de26feb6?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "projectors",
@@ -217,7 +220,7 @@ export const products: Product[] = [
     category: "printers-projectors",
     description:
       "Classroom and boardroom projectors with screens, mounts and cabling supplied and set up.",
-    image: "/products/projectors.svg",
+    image: "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=1200&q=80&auto=format&fit=crop",
   },
   {
     id: "cctv-kits",
@@ -234,7 +237,7 @@ export const products: Product[] = [
     category: "cctv",
     description:
       "DVRs, NVRs, surveillance-grade drives, power supplies and remote viewing setup.",
-    image: "/products/cctv-accessories.svg",
+    image: "https://images.unsplash.com/photo-1708807472445-d33589e6b090?w=1200&q=80&auto=format&fit=crop",
   },
 ];
 
