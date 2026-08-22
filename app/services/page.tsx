@@ -30,7 +30,7 @@ export default function ServicesPage() {
           { text: "Solutions", accent: true },
           { text: "For Every Need" },
         ]}
-        intro="From a single accessory to a complete office rollout — we supply it, set it up and keep it running. Every service below is backed by genuine products and dependable after-sales support."
+        intro="Everything your workspace needs in one place. We supply quality technology, handle the installation, and provide ongoing support long after delivery."
       />
       <ServicesGrid />
       <CTABanner />

@@ -97,7 +97,7 @@ export function Navbar() {
 
           <div className="hidden lg:block">
             <Button href="/contact" className="shine">
-              Let&apos;s Power Up
+              Let&apos;s Talk
             </Button>
           </div>
 

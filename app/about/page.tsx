@@ -40,7 +40,7 @@ export default function AboutPage() {
           { text: "Who We Are." },
           { text: "Built On Trust.", accent: true },
         ]}
-        intro={`${company.shortName} supplies genuine technology and complete IT solutions across Sri Lanka — at prices that make sense, with support that lasts beyond the sale.`}
+        intro={`${company.shortName} provides authentic technology and end-to-end IT solutions for homes and businesses across Sri Lanka, backed by transparent pricing and dependable after-sales support.`}
       />
 
       {/* Company story */}

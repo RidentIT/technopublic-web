@@ -2,13 +2,12 @@
 
 import { useCallback, useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
-import { company, missionShort } from "@/lib/company";
+import { ArrowRight } from "lucide-react";
+import { missionShort } from "@/lib/company";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { AnimatedHeadline } from "@/components/ui/AnimatedHeadline";
 import { BrandPanel } from "@/components/ui/BrandPanel";
-import { Spark } from "@/components/ui/Spark";
 
 /** Fixed copy — the three-line break pattern is deliberate, don't reflow it. */
 const headline = [
@@ -73,17 +72,6 @@ export function Hero() {
       <Container className="relative">
         <div className="grid items-center gap-10 xl:grid-cols-[1.15fr_0.85fr]">
           <div>
-            <motion.p
-              data-reveal=""
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-              className="mb-[22px] flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand-400"
-            >
-              <Spark className="hero-pulse h-3.5 w-3.5" />
-              {company.name}
-            </motion.p>
-
             <AnimatedHeadline lines={headline} className="hero-headline" />
 
             <motion.p
@@ -108,12 +96,6 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Button>
               <Button href="/contact" variant="outline" size="lg">
-                <span
-                  aria-hidden="true"
-                  className="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full border border-white/40"
-                >
-                  <Play className="h-2.5 w-2.5 fill-current" />
-                </span>
                 Contact Us
               </Button>
             </motion.div>

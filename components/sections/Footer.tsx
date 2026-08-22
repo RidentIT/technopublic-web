@@ -30,8 +30,8 @@ export function Footer() {
             <Logo />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-gray-400">
               {company.name} supplies genuine IT products and complete
-              technology solutions across Sri Lanka — backed by expert technical
-              support and dependable after-sales service.
+              technology solutions across Sri Lanka backed by expert technical
+              support and dependable after sales service.
             </p>
             <ul className="mt-6 flex gap-3">
               {socials.map((social) => (

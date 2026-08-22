@@ -22,7 +22,7 @@ const pillars: { icon: IconKey; title: string; body: string }[] = [
   {
     icon: "truck",
     title: "Islandwide Delivery",
-    body: "Ordered from anywhere in Sri Lanka — we deliver to your door, carefully packed and tracked.",
+    body: "Ordered from anywhere in Sri Lanka we deliver to your door, carefully packed and tracked.",
   },
   {
     icon: "headset",
@@ -42,8 +42,7 @@ export function WhyChooseUs() {
               Why businesses choose <span className="text-brand-500">Techno Hub</span>
             </h2>
             <p className="max-w-md text-base leading-relaxed text-gray-400">
-              We are not just a supplier. We advise, source, deliver and support —
-              so the technology you buy keeps working for you.
+              We help you choose the right solutions, source genuine products, handle delivery and setup, and provide reliable support to keep your technology working every day.
             </p>
           </div>
         </Reveal>
@@ -77,7 +76,7 @@ export function WhyChooseUs() {
                   Your IT partner for every need
                 </h3>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85">
-                  Complete technology solutions under one roof — from a single
+                  Complete technology solutions under one roof from a single
                   keyboard to laptops, networking, printers and full CCTV systems.
                 </p>
               </div>
