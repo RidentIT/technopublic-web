@@ -32,6 +32,10 @@ export default function AboutPage() {
     <>
       <PageHeader
         label="Who We Are"
+        image={{
+          src: "/techno4.jpg",
+          alt: "A red-lit gaming setup with a desk, monitors and gaming chair, reflecting the technology Techno Hub supports",
+        }}
         lines={[
           { text: "Who We Are." },
           { text: "Built On Trust.", accent: true },

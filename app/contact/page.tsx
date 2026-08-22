@@ -29,6 +29,10 @@ export default function ContactPage() {
     <>
       <PageHeader
         label="Contact Us"
+        image={{
+          src: "/techno5.jpg",
+          alt: "A close-up of an illuminated circuit board, representing the hardware Techno Hub supplies and supports",
+        }}
         lines={[
           { text: "Let's talk about" },
           { text: "your setup.", accent: true },

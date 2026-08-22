@@ -21,6 +21,10 @@ export default function ServicesPage() {
     <>
       <PageHeader
         label="Our Services"
+        image={{
+          src: "/techno2.jpg",
+          alt: "A technician installing a processor onto a motherboard, part of the technical support Techno Hub provides",
+        }}
         lines={[
           { text: "Technology" },
           { text: "Solutions", accent: true },

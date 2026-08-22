@@ -18,11 +18,14 @@ export function PageHeader({
   label,
   lines,
   intro,
+  image,
 }: {
   label: string;
   /** One entry per rendered line; mark one `accent` to colour it red. */
   lines: HeadlineLine[];
   intro?: string;
+  /** When set, a photo fills the panel instead of the placeholder content. */
+  image?: { src: string; alt: string };
 }) {
   return (
     <section className="relative overflow-hidden border-b border-white/10 py-14 sm:py-20">
@@ -74,6 +77,8 @@ export function PageHeader({
           <BrandPanel
             delay={0.4}
             className="h-[300px] sm:h-[340px] lg:h-[380px]"
+            image={image}
+            priority
           />
         </div>
       </Container>
