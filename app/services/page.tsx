@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import { CTABanner } from "@/components/sections/CTABanner";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { PageHeader } from "@/components/ui/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "Complete IT solutions from Techno Hub Technology (PVT) LTD. — laptops and desktops, computer accessories, gaming products, networking, printers and projectors, CCTV systems, plus technical support and after-sales service across Sri Lanka.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Services | Techno Hub",
+    description:
+      "Laptops, accessories, gaming, networking, printers, projectors, CCTV and full technical support — supplied and serviced islandwide.",
+    url: "/services",
+  },
+};
+
+export default function ServicesPage() {
+  return (
+    <>
+      <PageHeader
+        label="Our Services"
+        lines={[
+          { text: "Technology" },
+          { text: "Solutions", accent: true },
+          { text: "For Every Need" },
+        ]}
+        intro="From a single accessory to a complete office rollout — we supply it, set it up and keep it running. Every service below is backed by genuine products and dependable after-sales support."
+      />
+      <ServicesGrid />
+      <CTABanner />
+    </>
+  );
+}

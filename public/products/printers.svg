@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-label="Printers">
+  <defs>
+    <linearGradient id="bgPrinters" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="55%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <radialGradient id="glowPrinters" cx="78%" cy="22%" r="72%">
+      <stop offset="0%" stop-color="#E31E24" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#E31E24" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E31E24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridPrinters" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0v46" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bgPrinters)"/>
+  <rect width="1000" height="1000" fill="url(#gridPrinters)"/>
+  <rect width="1000" height="1000" fill="url(#glowPrinters)"/>
+  <circle cx="747" cy="741" r="3.5" fill="#E31E24" opacity="0.05"/><circle cx="360" cy="628" r="5.5" fill="#E31E24" opacity="0.08"/><circle cx="973" cy="515" r="2.5" fill="#E31E24" opacity="0.11"/><circle cx="586" cy="402" r="4.5" fill="#E31E24" opacity="0.14"/><circle cx="199" cy="289" r="1.5" fill="#E31E24" opacity="0.05"/><circle cx="812" cy="176" r="3.5" fill="#E31E24" opacity="0.08"/><circle cx="425" cy="63" r="5.5" fill="#E31E24" opacity="0.11"/><circle cx="38" cy="950" r="2.5" fill="#E31E24" opacity="0.14"/><circle cx="651" cy="837" r="4.5" fill="#E31E24" opacity="0.05"/><circle cx="264" cy="724" r="1.5" fill="#E31E24" opacity="0.08"/><circle cx="877" cy="611" r="3.5" fill="#E31E24" opacity="0.11"/><circle cx="490" cy="498" r="5.5" fill="#E31E24" opacity="0.14"/><circle cx="103" cy="385" r="2.5" fill="#E31E24" opacity="0.05"/><circle cx="716" cy="272" r="4.5" fill="#E31E24" opacity="0.08"/><circle cx="329" cy="159" r="1.5" fill="#E31E24" opacity="0.11"/><circle cx="942" cy="46" r="3.5" fill="#E31E24" opacity="0.14"/><circle cx="555" cy="933" r="5.5" fill="#E31E24" opacity="0.05"/><circle cx="168" cy="820" r="2.5" fill="#E31E24" opacity="0.08"/><circle cx="781" cy="707" r="4.5" fill="#E31E24" opacity="0.11"/><circle cx="394" cy="594" r="1.5" fill="#E31E24" opacity="0.14"/><circle cx="7" cy="481" r="3.5" fill="#E31E24" opacity="0.05"/><circle cx="620" cy="368" r="5.5" fill="#E31E24" opacity="0.08"/>
+  <!-- Centred so the label survives the object-cover crop at any card ratio. -->
+  <g transform="translate(500 550)" text-anchor="middle">
+    <path d="M0 0c.5 3.9 1.3 6.6 2.6 8s3.9 2.3 7.7 2.9v1.2c-3.8.6-6.4 1.5-7.7 2.9S.5 19.1 0 23h-1.2c-.5-3.9-1.3-6.6-2.6-8s-3.9-2.3-7.7-2.9v-1.2c3.8-.6 6.4-1.5 7.7-2.9S-1.7 3.9-1.2 0H0Z" fill="#E31E24" transform="translate(0 -118) scale(1.6)"/>
+    <text x="0" y="0" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="62" font-weight="900" letter-spacing="-1.5" fill="#FFFFFF" fill-opacity="0.92">PRINTERS</text>
+    <text x="0" y="59" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="3" fill="#E31E24" fill-opacity="0.85">INKJET, LASER &amp; INK TANK</text>
+  </g>
+  <rect x="0.5" y="0.5" width="999" height="999" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+</svg>
